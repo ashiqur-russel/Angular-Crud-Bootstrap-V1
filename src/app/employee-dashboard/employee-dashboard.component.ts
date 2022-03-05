@@ -29,6 +29,9 @@ export class EmployeeDashboardComponent implements OnInit {
       salary: [''],
     })
 
+    //call getEmployee method for fecth All Employee Data from Server
+    this.getAllEmployee();
+
   }
   //Add employee method
   postEmployeeDetails() {

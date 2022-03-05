@@ -22,13 +22,13 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let row for employeedata">
-            <td>1</td>
-            <td>Ashiqur</td>
-            <td>Rahman</td>
-            <td>asg@gmail.com</td>
-            <td>+49876332</td>
-            <td>$2000</td>
+        <tr *ngFor="let row of emplyoeeData">
+            <td>{{row.id}}</td>
+            <td>{{row.firstName}}</td>
+            <td>{{row.lastName}}</td>
+            <td>{{row.email}}</td>
+            <td>{{row.phone}}</td>
+            <td>{{row.salary}}</td>
             <td>
                 <button class="btn btn-info">Edit</button>
                 <button class="btn btn-danger mx-3">Delete</button>
