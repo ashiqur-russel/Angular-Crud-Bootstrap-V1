@@ -2,10 +2,10 @@
   "posts": [
     {
       "id": 1,
-      "firstName": "Alex",
-      "lastName": "Fred",
+      "firstName": "Alexis",
+      "lastName": "Sanchez",
       "email": "Fred@gmail.com",
-      "phone": "+497656782",
+      "phone": "+4976567823",
       "salary": "3200"
     },
     {
@@ -18,19 +18,11 @@
     },
     {
       "id": 3,
-      "firstName": "Hello",
-      "lastName": "Test",
-      "email": "test@gmail.com",
+      "firstName": "Bruce",
+      "lastName": "Lee",
+      "email": "bruce@gmail.com",
       "phone": "+495656782",
       "salary": "3000"
-    },
-    {
-      "id": 5,
-      "firstName": "Jamal",
-      "lastName": "Ahmed",
-      "email": "jamal@ymail.com",
-      "phone": "+4409876334",
-      "salary": "2900"
     }
   ],
   "comments": [
