@@ -29,8 +29,9 @@ export class ApiService {
 
   updateEmployee(data: any, id: number) {
     const postUrl = 'http://localhost:5000/posts'
+    const url = `${postUrl}/${id}`;
 
-    return this.http.put<any>(`postUrl/${id}`, data)
+    return this.http.put<any>(url, data)
       .pipe(map((res: any) => {
         return res
       }))
@@ -38,8 +39,10 @@ export class ApiService {
 
   deleteEmployee(id: number) {
     const postUrl = 'http://localhost:5000/posts'
+    const url = `${postUrl}/${id}`;
 
-    return this.http.delete<any>(`postUrl/${id}`)
+
+    return this.http.delete<any>(url)
       .pipe(map((res: any) => {
         return res
       }))

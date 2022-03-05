@@ -25,7 +25,7 @@ export class EmployeeDashboardComponent implements OnInit {
       firstName: [''],
       lastName: [''],
       email: [''],
-      mobile: [''],
+      phone: [''],
       salary: [''],
     })
 
@@ -46,9 +46,10 @@ export class EmployeeDashboardComponent implements OnInit {
       .subscribe(res => {
         console.log(res);
         alert("Employee Added Successfully");
-        let ref = document.getElementById('cancel')
+        let ref = document.getElementById('cancel');
         ref?.click();
-        this.formValue.reset()
+        this.formValue.reset();
+        this.getAllEmployee();
       },
         (err) => {
           alert("something went wrong")
@@ -58,14 +59,21 @@ export class EmployeeDashboardComponent implements OnInit {
   }
 
   //Get all employee method
-
   getAllEmployee() {
     this.api.getEmployee()
       .subscribe(res => {
-
         this.emplyoeeData = res
-
       })
+  }
+
+  //Delete employee with id
+  deleteEmployee(row: any) {
+
+    this.api.deleteEmployee(row.id).subscribe(res => {
+      alert("Employee deleted")
+      this.getAllEmployee(); // after delete button press page will refresh and load data
+    })
+
   }
 
 }

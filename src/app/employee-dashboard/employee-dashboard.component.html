@@ -30,8 +30,9 @@
             <td>{{row.phone}}</td>
             <td>{{row.salary}}</td>
             <td>
-                <button class="btn btn-info">Edit</button>
-                <button class="btn btn-danger mx-3">Delete</button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    class="btn btn-info">Edit</button>
+                <button (click)="deleteEmployee(row)" class="btn btn-danger mx-3">Delete</button>
             </td>
         </tr>
     </tbody>
@@ -67,7 +68,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputMobileNo" class="form-label">Mobile No</label>
-                        <input formControlName="mobile" type="text" class="form-control" id="exampleInputMobileNo">
+                        <input formControlName="phone" type="text" class="form-control" id="exampleInputMobileNo">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputSalary" class="form-label">Salary</label>

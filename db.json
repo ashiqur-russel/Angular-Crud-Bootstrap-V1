@@ -2,14 +2,18 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "firstName": "Alex",
+      "lastName": "Fred",
+      "email": "Fred@gmail.com",
+      "phone": "+497656782",
+      "salary": "3200"
     },
     {
       "id": 2,
       "firstName": "Mohammad Ashiqur",
       "lastName": "Rahman",
       "email": "rahman.tuc@gmail.com",
+      "phone": "+497453782",
       "salary": "2300"
     },
     {
@@ -17,7 +21,16 @@
       "firstName": "Hello",
       "lastName": "Test",
       "email": "test@gmail.com",
+      "phone": "+495656782",
       "salary": "3000"
+    },
+    {
+      "id": 5,
+      "firstName": "Jamal",
+      "lastName": "Ahmed",
+      "email": "jamal@ymail.com",
+      "phone": "+4409876334",
+      "salary": "2900"
     }
   ],
   "comments": [
