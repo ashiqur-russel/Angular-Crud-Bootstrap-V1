@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "firstName": "Mohammad Ashiqur",
+      "lastName": "Rahman",
+      "email": "rahman.tuc@gmail.com",
+      "salary": "2300"
+    },
+    {
+      "id": 3,
+      "firstName": "Hello",
+      "lastName": "Test",
+      "email": "test@gmail.com",
+      "salary": "3000"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
